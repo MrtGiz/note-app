@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/GridFilters.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'css/RangeMenu.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'css/examples.css' %}" />
+
+
+{% endblock %}
+
+{% block title %} List of Notes {% endblock %}
+{% block main %}
+{% csrf_token %}
+
+<!-- EXAMPLES -->
+<h1>List of Notes</h1>
+
+<p>
+    These forms do not do anything and have very little validation. They solely demonstrate
+    how you can use Ext Forms to build and layout forms on the fly.
+</p>
+
+<div id="editor-grid"></div>
+
+<script type="text/javascript" src="/static/js/CheckColumn.js"></script>
+<script type="text/javascript" src="/static/js/FieldLabeler.js"></script>
+<script type="text/javascript" src="/static/js/FieldReplicator.js"></script>
+
+<script type="text/javascript" src="{% static 'js/menu/RangeMenu.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/menu/ListMenu.js' %}"></script>
+
+
+<script type="text/javascript" src="{% static 'js/GridFilters.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/filter/Filter.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/filter/StringFilter.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/filter/DateFilter.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/filter/ListFilter.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/filter/NumericFilter.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/filter/BooleanFilter.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'js/examples.js' %}"></script>
+
+
+<!-- <script type="text/javascript" src="/static/js/note_actions.js"></script> -->
+
+<script type="text/javascript" src="{% static 'js/model.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/controller.js' %}"></script>
+
+<script type="text/javascript" src="{% static 'js/app.js' %}"></script>
+
+{% endblock %}

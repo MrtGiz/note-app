@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %} Registration to Notes {% endblock %}
+{% block main %}
+{% csrf_token %}
+
+<!-- EXAMPLES -->
+<h1>Registration</h1>
+
+<p>
+    These forms do not do anything and have very little validation. They solely demonstrate
+    how you can use Ext Forms to build and layout forms on the fly.
+</p>
+
+<script type="text/javascript" src="{% static 'js/registration.js' %}"></script>
+{% endblock %}

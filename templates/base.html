@@ -1,0 +1,31 @@
+<!doctype  html>
+{% load staticfiles %}
+<html  lang="en">
+<head>
+
+  <link rel="stylesheet" type="text/css" href="{% static 'css/ext-all.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/forms.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/examples.css' %}">
+
+  <!-- <script type="text/javascript" src="{% static 'js/ext-jquery-adapter.js' %}"></script> -->
+  <script type="text/javascript" src="{% static 'js/ext-base.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/ext-all.js' %}"></script>
+  <!-- <script type="text/javascript" src="{% static 'js/common.js' %}"></script> -->
+  <!-- <script type="text/javascript" src="{% static 'js/login.js' %}"></script> -->
+  <!-- <script type="text/javascript" src="{% static 'js/registration.js' %}"></script> -->
+
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/classic/theme-classic/resources/theme-classic-all.css" rel="stylesheet"/>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/ext-all.js"></script> -->
+
+  {% block head %}{% endblock head %}
+
+  <title>{% block title %}{% endblock title %}</title>
+
+</head>
+
+<body>
+  {% block main %}
+  {% endblock %}
+</body>
+
+</html>
