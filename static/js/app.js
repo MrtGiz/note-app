@@ -1,8 +1,7 @@
-// Ext.onReady(function() {
+import {onAdd, onDelete} from './controller';
 
-  // import {onAdd} from './controller.js';
-  // import {onDelete} from './controller.js';
-
+Ext.onReady(function() {
+  
   Ext.QuickTips.init();
 
   Ext.BLANK_IMAGE_URL = '/static/images/default/s.gif';
@@ -136,4 +135,4 @@
   // }
 
 
-// });
+});

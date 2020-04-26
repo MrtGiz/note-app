@@ -91,3 +91,5 @@ function onDelete() {
   alert(rec.data);
   console.log(rec)
 }
+
+export {onAdd, onDelete};
